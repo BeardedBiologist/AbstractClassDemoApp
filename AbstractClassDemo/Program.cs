@@ -6,21 +6,22 @@ namespace MyNamespace
     {
         static void Main(string[] args)
         {
+            
 
             Console.ReadLine();
         }
     }
-    public class InventoryItem
-    {
-        public string ProductName { get; set; }
-        public int QuantityOnHand { get; set; }
-    }
-    public class Book
-    {
 
-    }
-    public class Vehicle
+    public abstract class Vehicle
     {
+        public string VIN { get; set; }
+        public string Manufactoror { get; set; }
+        public string Model { get; set; }
+        public int YearManufactured { get; set; }
+    }
 
+    public class Car : Vehicle
+    {
+        public int NumberOfWheels { get; set; }
     }
 }
