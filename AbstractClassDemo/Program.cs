@@ -1,3 +1,26 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
 
+namespace MyNamespace
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.ReadLine();
+        }
+    }
+    public class InventoryItem
+    {
+        public string ProductName { get; set; }
+        public int QuantityOnHand { get; set; }
+    }
+    public class Book
+    {
+
+    }
+    public class Vehicle
+    {
+
+    }
+}
